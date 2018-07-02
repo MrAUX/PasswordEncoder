@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="322.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="passwordencryptor.FXMLDocumentController">
+   <children>
+      <TextField fx:id="enter" layoutX="35.0" layoutY="51.0" prefHeight="25.0" prefWidth="311.0" />
+      <TextField fx:id="newvalue" layoutX="35.0" layoutY="128.0" prefHeight="25.0" prefWidth="311.0" />
+      <Label layoutX="35.0" layoutY="23.0" prefHeight="17.0" prefWidth="140.0" text="Enter your Text/Password:" />
+      <Label layoutX="35.0" layoutY="96.0" prefHeight="17.0" prefWidth="185.0" text="Here is your Text/Password:" />
+      <Label layoutX="35.0" layoutY="180.0" prefHeight="17.0" prefWidth="240.0" text="Here is your private key (or enter it):" />
+      <TextField fx:id="key" layoutX="35.0" layoutY="217.0" prefHeight="25.0" prefWidth="311.0" />
+      <Button layoutX="48.0" layoutY="267.0" mnemonicParsing="false" onAction="#generate" prefHeight="42.0" prefWidth="115.0" text="Encode" />
+      <Button layoutX="231.0" layoutY="267.0" mnemonicParsing="false" onAction="#decode" prefHeight="42.0" prefWidth="115.0" text="Decode" />
+   </children>
+</AnchorPane>
